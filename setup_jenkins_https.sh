@@ -61,7 +61,9 @@ echo "<Virtualhost *:80>
 sudo a2ensite jenkins
 sudo service apache2 restart
 
-echo "Done!"
+sleep 10s
 
 #get initial pw on the log
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+echo "Done!"
